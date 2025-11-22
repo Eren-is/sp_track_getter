@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sp_track_getter"
+version = "0.1.0"
+description = "Aggregate Spotify song/track data using Spotify API with audio features data from ReccoBeats and/or SoundStat"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Eren-is" }
+]
+keywords = [
+    "spotify",
+    "reccobeats",
+    "soundstat",
+    "audio features",
+    "track",
+    "track data",
+    "song",
+    "song data",
+]
+
+requires-python = ">=3.10"
+
+dependencies = [
+    "requests",
+    "sseclient-py",
+]
+
+[project.optional-dependencies]
+dotenv = [
+    "python-dotenv",
+]
+
+[project.urls]
+Homepage = "https://github.com/Eren-is/sp_track_getter"
+Issues = "https://github.com/Eren-is/sp_track_getter/issues"
