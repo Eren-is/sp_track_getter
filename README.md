@@ -49,7 +49,7 @@ When creating a new SpTrackGetter instance, you can configure it with the follow
 
 Example:
 ```python
-from SpTrackGetter import SpTrackGetter
+from sp_track_getter import SpTrackGetter
 
 track = SpTrackGetter(use_rec_api=True)
 track.load_track_data(url="https://open.spotify.com/track/25mgvKnePKbDpStpjy9sT1")
@@ -83,7 +83,7 @@ Example file usage available at the bottom of the source file - [sp_track_getter
 
 Example usage when importing as library:
 ```python
-from SpTrackGetter import SpTrackGetter
+from sp_track_getter import SpTrackGetter
 from dotenv import dotenv_values
 
 # Get API keys saved in local .env file
